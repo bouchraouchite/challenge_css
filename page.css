@@ -4,6 +4,7 @@ body {
   overflow: hidden;
   background: linear-gradient(to right, #bf8ed9, #f0f0f0);
   animation: gradientAnimation 15s ease infinite alternate;
+  overflow-y: scroll;
 }
 
 .container {
@@ -115,6 +116,101 @@ input {
   border: 1px solid #ccc;  /* Bordure grise */
   border-radius: 10px;   /* Coins arrondis */
   font-size: 16px;      /* Taille de la police */
+}
+
+
+.produits {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.manipulateur-produits {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.produits-grille-produit {
+  width: 300px;
+  min-height: 300px;
+  flex-direction: column;
+}
+
+.meilleur-vente {
+  position: relative;
+}
+
+.texte-meilleur-vente {
+  position: absolute;
+  right: -25%;
+  top: 10%;
+  width: 150px;
+  height: 150px;
+  color: #211260;
+  background: #211260;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.manipulateur-image-produit {
+  overflow: hidden;
+  background: #fcc9bb;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  border: 0.1em solid #0c0c0c;
+}
+
+.manipulateur-image-produit img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.sec {
+  background-color: #efecf3;
+  border-radius: 130px;
+}
+
+.toner {
+  background-color: #e4bb85;
+}
+
+.boutons-grille-produits {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boutons-grille-produits button {
+  width: 300px;
+}
+
+.milieu {
+  width: 280px;
+}
+.grille-produits {
+  display: flex; 
+  justify-content: space-between;
+  margin: 40px; 
+}
+
+.produit-grille {
+  flex: 1; 
+  margin:40px
+
 }
 
 
